@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-color: rgba(0, 0, 255, 0.603);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 30px 60px 30px 60px;
+}
+.result_box {
+  margin-top: 10px;
+  background-color: rgba(224, 255, 255, 0.906);
+  color: black;
+  border-radius: 8px;
+  text-align: right;
+  font-size: 60px;
+  padding-right: 7px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  gap: 1px;
+}
+
+.row button {
+  width: 75px;
+  height: 75px;
+  border-radius: 0 0 0 0;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  text-align: center;
+  transition: 0.2s all linear;
+  background-color: blue;
+  margin: 5px;
+  color: white;
+}
+
+.row button:hover {
+  background-color: #e0e0e0;
+}
+
+.row button:active {
+  background-color: #eeb3b3;
+}
+#equal {
+  width: 150px;
+}
+#dot {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .container {
+    border-radius: 15px;
+    padding: 10px 20px 10px 20px;
+  }
+  .result_box {
+    font-size: 40px;
+  }
+  .row button {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.2s all linear;
+    background-color: blue;
+    color: white;
+  }
+  #equal {
+    width: 90px;
+  }
+}
